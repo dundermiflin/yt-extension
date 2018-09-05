@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"version": "1.0",
+	"name": "YouTube Listener",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"default_icon": "yt.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+				"tabs",
+				"storage"
+				],
+	"commands": {
+		"trigger": {
+			"suggested_keys": {
+				"windows": "Ctrl+K",
+				"default": "Ctrl+K",
+				"mac": "Command+2"
+			},
+			"description": "Triigers the tab info capture"
+		}
+	}
+}
